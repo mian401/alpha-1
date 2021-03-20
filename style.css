@@ -1,0 +1,544 @@
+/* GOOGLE FONTS */
+
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Thambi+2:wght@600&display=swap');  /* (font-family: 'Baloo Thambi 2', cursive;) */
+@import url('https://fonts.googleapis.com/css2?family=Gugi&display=swap'); /* (font-family: 'Gugi', cursive;) */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap'); /* (font-family: 'Roboto', sans-serif;) */
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');  /* (font-family: 'Pacifico', cursive;) */             
+
+
+/* RESETTING CSS */
+*{
+
+    padding: 0;
+    margin: 0px;
+    
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: rgb(226, 226, 226);
+}
+
+/* Designing NAVBAR*/
+
+#navbar{
+
+    overflow: hidden;
+    position: fixed; 
+    top: 0; 
+    width: 100%; 
+
+    z-index: 1000;
+
+    display: grid;
+    grid-template-columns: 2fr 1.2fr;
+    
+    padding: 5px;
+    
+    /* background-color: #9921e8;
+    background-image: linear-gradient(315deg, #9921e8 0%, #5f72be 74%); */
+
+    background: linear-gradient(to right, #000000 35%, #ff0000 100%);
+}
+
+#brand{
+
+    /* border: 2px solid red; */
+    padding: 5px;
+
+    color: white;
+    font-size: 30px;
+
+    /* font-family: 'Lilita One', cursive; */
+    font-family: 'Gugi', cursive;
+}
+
+#nav-links{
+
+    /* border: 2px solid green; */
+
+    display: flex;
+    justify-content: center;
+
+}
+
+.nav-link{
+
+    margin: 4px 46px;
+    text-decoration: none;
+    color: white;
+    
+    font-size: 25px;
+    font-family: 'Baloo Thambi 2', cursive;
+}
+
+.nav-link:hover{
+
+    background-color: white;
+    color: black;
+
+    padding: 0px 10px;
+    border-radius: 20px;
+}
+
+/* Designing BANNER */
+
+#banner-container{
+
+    position: relative;
+}
+
+#banner{
+
+    width: 100%;
+    height: auto;
+}
+
+#banner-text h1{
+    float: left;
+    position: absolute;
+    left: 65%;
+    top: 51%;
+    
+    font-family: 'Roboto', sans-serif;
+    font-size: 45px;
+
+    color: white;
+}
+
+#banner-text span{
+
+    float: left;
+    position: absolute;
+    left: 70%;
+    top: 57%;
+
+    font-family: 'Pacifico', cursive;
+    font-size: 40px;
+
+    color: white;
+}
+
+/* Designing Welcome Section */
+
+#welcome{
+
+    /* background-color: white; */
+    background-color: #000;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    padding: 40px;
+    margin-top: -3px;
+
+}
+
+#welcome-heading{
+
+    color: white;
+
+    font-family: 'Roboto', sans-serif;
+    
+    font-size: 35px;
+}
+
+#welcome-text{
+
+    text-align: justify;
+    font-size: 25px;
+    font-family: 'Baloo Thambi 2', cursive;
+    color: rgb(93, 223, 255);
+}
+
+#welcome hr{
+
+    background-color: black;
+
+    margin: 15px 0px;
+
+    width: 320px;
+    border: 2px solid red;
+    border-radius: 15px;
+}
+
+/* #welcome-img{
+
+    width: 110%;
+    height: auto;
+
+} */
+
+/* Designing Service Section */
+
+#services{
+
+    /* border: 2px solid black; */
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    padding: 70px 0px;
+
+}
+
+#services h1{
+    
+    border-bottom: 5px solid red;
+    
+    font-family: 'Roboto', sans-serif;
+
+    margin-bottom: 30px;
+}
+
+#service-cards{
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.service-card{
+
+    /* border: 2px solid green; */
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    height: 250px;
+    width: 300px;
+
+    padding: 75px 30px;
+    margin: 20px 82px;
+
+    /* background-color: white; */
+    background-color: black;
+    color: white;
+}
+
+.service-logo{
+
+    height: 40px;
+    width: 40px;
+
+    margin-bottom: 30px;
+    padding: 5px;
+
+    background-color: #ff4d4d;
+
+    border-radius: 30px;
+}
+
+.service-heading{
+
+    margin-bottom: 8px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.service-text{
+
+    margin-bottom: 5px;
+    font-size: larger;
+    text-align: justify;
+    font-family: 'Baloo Thambi 2', cursive;
+}
+
+.service-card:hover{
+
+   background-color: white;
+   color: black;
+}
+
+.service-card hr{
+
+width: 155px;
+    background-color: none;
+
+    border: 2px solid red;
+    border-radius: 20px;
+
+    margin-bottom: 12px;
+}
+
+
+/* Designing About Section */
+
+#about{
+
+    /* border: 2px solid green; */
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#about h1{
+
+    border-bottom: 5px solid red;
+    
+    font-family: 'Roboto', sans-serif;
+
+    margin-bottom: 50px;
+}
+
+.about-card{
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.about-image{
+
+    width: 700px;
+    height: 550px;
+    /* border: 2px solid black; */  
+}
+
+.about-text{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 550px;
+    height: 550px;
+
+    padding: 0px 75px;
+
+    /* border: 2px solid red; */
+    background-color: #000;
+    color: white;
+}
+
+.about-text h1{
+
+    border-bottom: 5px solid red;
+    width: 136px;
+    font-family: 'Roboto', sans-serif;
+
+    margin-bottom: 10px;
+    /* padding-bottom: 5px; */
+}
+
+.about-text p{
+
+    text-align: justify;
+
+    margin-top: 15px;
+
+    font-family: 'Baloo Thambi 2', cursive;
+}
+
+.about-text:hover{
+
+    background: #fff;
+    color: black;
+}
+
+#about hr{
+
+    border: 1px solid red;
+    
+    width: 1550px; 
+    
+    margin: 40px 0px;
+    opacity: 20%;
+}
+
+
+/* Designing Sponsor Section */
+
+#sponsors{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    padding: 70px 0px;
+    margin-top: 40px;
+
+    background-color: black;
+}
+
+#sponsors h1{
+
+    border-bottom: 5px solid red;
+    color: white;
+
+    font-family: 'Roboto', sans-serif;
+    
+    margin-bottom: 65px;
+    padding-bottom: 5px;
+}
+
+.sponsor-logo{
+
+    height: 130px;
+    width: 150px;
+
+    margin: 0px 50px;
+}
+
+
+/* Designing Contact Form */
+
+#contact-form{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background-color: black;
+}
+
+#contact-form h1{
+ 
+    border-bottom: 5px solid red;
+    color: white;
+
+    font-family: 'Roboto', sans-serif;
+    
+    margin-bottom: 35px;
+    padding-bottom: 5px;
+}
+
+input, select{
+
+    width: 650px;
+
+    text-align: center;
+    font-size: 25px;
+    font-family: 'Baloo Thambi 2', cursive;
+    
+    background-color: white;
+    border: none;
+    border-radius: 30px;
+
+    padding: 4px;
+    /* margin: 20pqsx 0px; */
+}
+
+select{
+
+    width: 670px;
+}
+
+textarea{
+
+    width: 650px;
+    
+    border: none;
+    border-radius: 8px;
+
+    background-color: white;
+    
+    
+    font-size: 20px;
+    font-family: 'Baloo Thambi 2', cursive;
+
+    /* margin: 20px 0px; */
+    margin-bottom: 80px;
+
+    padding: 5px 10px;
+}
+
+option{
+    font-family: 'Roboto', sans-serif;
+}
+
+#contact-form hr{
+
+    width: 1px;
+
+    background-color: red;
+
+    border: 2px solid red;
+    border-radius: 50px;
+
+    margin: 20px;
+    
+}
+
+
+/* Designing Footer Section */
+
+#footer{
+
+    border-top: 2.5px solid red;
+    background-color: #000000;
+    color: white;
+    padding: 55px;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
+}
+
+/* DESIGNING FOOTER LINKS */
+
+.footer-links {
+    list-style-type: none;
+    text-align: center;
+    font-size: larger;
+}
+
+.footer-links li{
+    padding: 5px;
+    font-size: large;
+    font-family: 'Baloo Thambi 2', cursive;
+}
+
+.footer-links li:hover{
+    color: red;
+}
+
+
+#footer-about{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#footer-logo{
+    height: 155px;
+    width: 155px;
+}
+
+.footer-about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#footer-text{
+    text-align: justify;
+    font-family: 'Baloo Thambi 2', cursive;
+}
+
+.copy-right{
+    
+    color: red;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Baloo Thambi 2', cursive;
+    background-color: #000000;
+    
+}
+
+.copy-right:hover{
+
+    color:white;
+}
+
+
